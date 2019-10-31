@@ -1,0 +1,10 @@
+<div class="counter" *ngFor="let counter of counters">
+  <div class="label">{{ counter.coffeeType }}</div>
+  <div class="button" [class.disabled]="counter.value <= 0" (click)="decrementValue(counter)">&ndash;</div>
+  <div class="viewport">
+    <div class="values" [ngStyle]="{'transform': 'translate(0, -' + counter.value * 4 +'rem)'}">
+      <div class="value" *ngFor="let value of values">{{ value }}</div>
+    </div>
+  </div>
+  <div class="button" [class.disabled]="counter.value >= maxValue()" (click)="incrementValue(counter)">+</div>
+</div>

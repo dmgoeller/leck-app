@@ -1,0 +1,21 @@
+{
+  "name": "leck-app",
+  "short_name": "leck-app",
+  "theme_color": "#4d321e",
+  "background_color": "#4d321e",
+  "display": "standalone",
+  "scope": "/leck-app/",
+  "start_url": "index.html",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
